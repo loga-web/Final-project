@@ -265,6 +265,7 @@ html{
 .training .row{
     display: grid;
   grid-template-columns: 50% 50%;
+  
 margin-left: 70px;
 margin-right: 20px;
     
@@ -274,6 +275,7 @@ margin-right: 20px;
     margin-top: 70px;
     font-size: 15px;
     text-align: left;
+    font-weight: bold;
 }
 .training hr{
     margin-left: 40px;
@@ -293,7 +295,7 @@ margin-right: 20px;
     
     top: 30px; 
     left: 40px; 
-    /* z-index: 5; */
+    
 }
 
                              /* gallery */
@@ -380,6 +382,9 @@ margin-right: 20px;
     font-size: 1.5rem;
     color: black;
     border-radius: 15px;
+}
+.inner-prices a:hover{
+    background: #db6d1e;
 }
 
 
@@ -683,7 +688,7 @@ footer p{
         font-size: 55%;
     }
     #menubar{
-        display: initial;
+        display: inline; 
     }
 
     .navbar{
@@ -744,12 +749,23 @@ footer p{
     .training .txt-col p{
         margin-right: 100px;
         font-size: 10px;
-        text-align: center;
+        /* text-align: center; */
     }
     .training .row{
-        grid-template-columns: repeat(auto-fill, 600px);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        /* justify-items: left; */
+
     }
+    #tv_container video{
+        left: 5px;
+    }
+    .training hr{
+        margin-right: 5px;
+    }
+    
     footer .social_icon{
+        flex-wrap: wrap;
+        gap: 15px;
         font-size: 15px;
         margin-left: 15%;
     }
